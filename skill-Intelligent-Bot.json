@@ -1,0 +1,1255 @@
+{
+  "intents": [
+    {
+      "intent": "electronics",
+      "examples": [
+        {
+          "text": "bjt biasing"
+        },
+        {
+          "text": "scr"
+        },
+        {
+          "text": "pn junction diode"
+        },
+        {
+          "text": "depliction layer"
+        },
+        {
+          "text": "zener diode"
+        },
+        {
+          "text": "photo diode"
+        },
+        {
+          "text": "bipolar junction transistor"
+        },
+        {
+          "text": "thyristors"
+        },
+        {
+          "text": "what is electron"
+        },
+        {
+          "text": "what is diode"
+        },
+        {
+          "text": "What is current density"
+        },
+        {
+          "text": "electric field"
+        },
+        {
+          "text": "resistors"
+        },
+        {
+          "text": "inductors"
+        },
+        {
+          "text": "battery"
+        },
+        {
+          "text": "semiconductor"
+        },
+        {
+          "text": "drift current"
+        },
+        {
+          "text": "diffusion current"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "hi"
+        },
+        {
+          "text": "can i know your scope bot"
+        },
+        {
+          "text": "how are you doing ?"
+        },
+        {
+          "text": "good evening"
+        },
+        {
+          "text": "good afternoon"
+        },
+        {
+          "text": "goodmorning"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Store",
+      "examples": [
+        {
+          "text": "What is your store name"
+        },
+        {
+          "text": "Where is your store located"
+        },
+        {
+          "text": "What are the Timings of your store"
+        },
+        {
+          "text": "store directions"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "users_manual",
+      "examples": [
+        {
+          "text": "how do i access the settings"
+        },
+        {
+          "text": "how do i set the time"
+        },
+        {
+          "text": "sensors setting"
+        },
+        {
+          "text": "how do i turn on the heater"
+        },
+        {
+          "text": "how do i configure wifi ?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "wireless_router",
+      "examples": [
+        {
+          "text": "What You Need Before You Begin"
+        },
+        {
+          "text": "Product Registration, Support, and Documentation"
+        },
+        {
+          "text": "Power Light Not On"
+        },
+        {
+          "text": "Internet Connection"
+        },
+        {
+          "text": "Obtaining an Internet IP Address"
+        },
+        {
+          "text": "Smart Wizard Setup"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Thankyou",
+      "examples": [
+        {
+          "text": "bye"
+        },
+        {
+          "text": "thankyou"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Appointment",
+      "examples": [
+        {
+          "text": "i want to make a appointment"
+        },
+        {
+          "text": "can you please take appointment"
+        },
+        {
+          "text": "i can get appointment"
+        },
+        {
+          "text": "place my appointment"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Appointment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "evening slot",
+          "synonyms": [
+            "Evening Slot",
+            "evg slot"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "morning slot",
+          "synonyms": [
+            "mrg slot",
+            "Morning Slot"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "slots are",
+          "synonyms": [
+            "slots ",
+            "free slots"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "thankyou",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "bye",
+          "synonyms": [
+            "Bye",
+            "good bye",
+            "good by",
+            "bii",
+            "gud bye",
+            "gud bi",
+            "see you soon bye"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "thankyou",
+          "synonyms": [
+            "tq",
+            "thanks a lot",
+            "thanku",
+            "thank you",
+            "thanks",
+            "tq so much",
+            "tqq",
+            "Thankyou"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "store",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "store timings",
+          "synonyms": [
+            "timings of store",
+            "Store Timings",
+            "store timings are"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "store directions",
+          "synonyms": [
+            "Store Directions ",
+            "store directions are ",
+            "how can i come to your store",
+            "how will i come to store"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "store location",
+          "synonyms": [
+            "location of your store ",
+            "location of store",
+            "Store Location",
+            "store located"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "wifi_router",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "What You Need Before You Begin",
+          "synonyms": [
+            "what i need before i begin",
+            "to begin"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Smart Wizard Setup",
+          "synonyms": [
+            "setup Smart Wizard",
+            "smart wizard"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Power Light Not On",
+          "synonyms": [
+            "light is off",
+            "power light is off"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Internet Connection",
+          "synonyms": [
+            "internet connection",
+            "data connection"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "electronics",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "pn junction diode",
+          "synonyms": [
+            "PN Juncton Diode"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "bjt biasing",
+          "synonyms": [
+            "BJT Biasing",
+            "Biasing BJT"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Depliction layer",
+          "synonyms": [
+            "Depliction Layer",
+            "junction"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "electric field",
+          "synonyms": [
+            "Electric Field"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Thyristors",
+          "synonyms": [
+            "thyristors",
+            "thyristor"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "photo diode",
+          "synonyms": [
+            "Photo Diode"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "resistors",
+          "synonyms": [
+            "Resistor"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "scr",
+          "synonyms": [
+            "SCR"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "semiconductor",
+          "synonyms": [
+            "Semiconductors",
+            "Semiconductor",
+            "Semi-Conductors"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "current density",
+          "synonyms": [
+            "Current Density"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Zener Diode",
+          "synonyms": [
+            "zener diode",
+            "zenerdiode"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "electron",
+          "synonyms": [
+            "electrons"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "bipolar junction transistor",
+          "synonyms": [
+            "BJT",
+            "Bipolar Junction Transistor"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "diffusion current",
+          "synonyms": [
+            "Diffusion Current"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Drift Current",
+          "synonyms": [
+            "drift current"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Inductors",
+          "synonyms": [
+            "inductor"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "battery",
+          "synonyms": [
+            "cell"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "scope of bot",
+          "synonyms": [
+            "bot scope",
+            "Scope BOT ",
+            "scope of the bot",
+            "scope"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "what is your name",
+          "synonyms": [
+            "what's your name",
+            "wt's u r name",
+            "your name",
+            "Name",
+            "name please"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "hi",
+          "synonyms": [
+            "hello",
+            "hii",
+            "namasthe",
+            "adhaab"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good morning",
+          "synonyms": [
+            "gm",
+            "vgm",
+            "gudmrg",
+            "gud mrg",
+            "goodmorning",
+            "verygoodmorning",
+            "very good morning"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "very good evening",
+          "synonyms": [
+            "goodevening",
+            "verygoodevening",
+            "ge",
+            "vge",
+            "gud evg",
+            "gudevg",
+            "vrygoodevg",
+            "vry gud evg"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good afternoon",
+          "synonyms": [
+            "very good afternoon",
+            "verygoodafternoon",
+            "vgf"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good night",
+          "synonyms": [
+            "very good nigh",
+            "good night",
+            "gn",
+            "vgn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ok",
+          "synonyms": [
+            "alright",
+            "ok then"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://eu-gb.functions.cloud.ibm.com/api/v1/web/si05202000359%40smartinternz.com_dev/default/data%20collection.json",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "parent": "node_6_1591710682987",
+      "conditions": "anything_else",
+      "dialog_node": "response_10_1591711464025",
+      "previous_sibling": "response_2_1591711460466"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_3.passages[2].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1591710682987",
+      "conditions": "$webhook_result_3",
+      "dialog_node": "response_2_1591711460466"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "very good afternoon"
+              },
+              {
+                "text": "good afternoon"
+              },
+              {
+                "text": "A Pleasant  Good Afternoon"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1591329261102",
+      "conditions": "@greetings:(good afternoon)",
+      "dialog_node": "response_8_1591340905546",
+      "previous_sibling": "response_3_1591340781804"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "good night "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1591329261102",
+      "conditions": "@greetings:(good night)",
+      "dialog_node": "response_8_1591341149590",
+      "previous_sibling": "response_7_1591341045257"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Very beautiful morning "
+              },
+              {
+                "text": "very good morning"
+              },
+              {
+                "text": "wonderful good morning"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1591329261102",
+      "conditions": "@greetings:(good morning)",
+      "dialog_node": "response_3_1591340781804",
+      "previous_sibling": "response_9_1591329319074"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ya"
+              },
+              {
+                "text": "ok , is there any thing i can help you"
+              },
+              {
+                "text": "alright"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1591329261102",
+      "conditions": "@greetings:ok",
+      "dialog_node": "response_1_1591531434843",
+      "previous_sibling": "response_2_1591530765675"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "hello , i am the bot - Smart bot"
+              },
+              {
+                "text": "my name is Smart BOT"
+              },
+              {
+                "text": "I am Smart Bot"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1591329261102",
+      "conditions": "@greetings:(what is your name)",
+      "dialog_node": "response_3_1591531960859",
+      "previous_sibling": "response_1_1591531434843"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "very good evening"
+              },
+              {
+                "text": "good evening"
+              },
+              {
+                "text": "great evening"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1591329261102",
+      "conditions": "@greetings:(very good evening)",
+      "dialog_node": "response_7_1591341045257",
+      "previous_sibling": "response_8_1591340905546"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "hii i am the bot - smart bot , my scope is i can help you as a Customer Help Desk And i am also good at basics of electronics with some scope"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1591329261102",
+      "conditions": "@greetings:(scope of bot)",
+      "dialog_node": "response_2_1591530765675",
+      "previous_sibling": "response_8_1591341149590"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "hi hello"
+              },
+              {
+                "text": "hi"
+              },
+              {
+                "text": "hello"
+              },
+              {
+                "text": "namaste"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1591329261102",
+      "conditions": "@greetings:hi",
+      "dialog_node": "response_9_1591329319074"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "i am sorry , i am not getting you"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_8_1591527564091",
+      "conditions": "anything_else",
+      "dialog_node": "response_1_1591527635341",
+      "previous_sibling": "response_6_1591527632133"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_2.passages[2].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1591527564091",
+      "conditions": "$webhook_result_2",
+      "dialog_node": "response_6_1591527632133"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter your mobile number"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1592130396478",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1592130396522",
+      "previous_sibling": "handler_2_1592130396522"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1592130396478",
+      "context": {
+        "number_2": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_2_1592130396522"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1592126552700",
+      "disabled": true,
+      "conditions": "",
+      "dialog_node": "response_7_1592130037987",
+      "previous_sibling": "slot_3_1592130396478"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1592126552700",
+      "variable": "$number_2",
+      "dialog_node": "slot_3_1592130396478",
+      "previous_sibling": "slot_3_1592130270486"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1592126552700",
+      "variable": "$number",
+      "dialog_node": "slot_3_1592130270486"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter  available slot for you : morning slot or evening slot"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1592130270486",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1592130270538",
+      "previous_sibling": "handler_10_1592130270538"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1592130270486",
+      "context": {
+        "number": "@Appointment"
+      },
+      "conditions": "@Appointment",
+      "event_name": "input",
+      "dialog_node": "handler_10_1592130270538"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "timings of our store is : {10:00 AM to 1:00 PM and again from 4:00 PM to 9:00 PM }"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1592128306426",
+      "conditions": "@store:(store timings)",
+      "dialog_node": "response_7_1592129822182",
+      "previous_sibling": "response_10_1592128519736"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "directions for this store is :  (from railways station) is :{ if you come out from railways station main gate at walk-able distance you come to horse college , come straight you may see a bank  opposite to that bank our store }          (from bus stand)  is : {if you come out of bus stand at main gate take right , at walk-able distance you can reach srikantam circle, from that take right at walk-able distance you can reach horse college, from horse college at walk-able distance you can see bank opposite to bank our store  }      "
+              },
+              {
+                "text": "if you are not getting me please call our person , at help line number"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1592128306426",
+      "conditions": "@store:(store directions)",
+      "dialog_node": "response_10_1592128519736",
+      "previous_sibling": "response_4_1592128389931"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This store is located at : Tower clock, Anantapur , Andhra Pradesh,INDIA"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1592128306426",
+      "conditions": "@store:(store location)",
+      "dialog_node": "response_4_1592128389931"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "bye "
+              },
+              {
+                "text": "bii"
+              },
+              {
+                "text": "see you soon bye"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1591348478531",
+      "conditions": "@thankyou:bye",
+      "dialog_node": "response_1_1591348948598",
+      "previous_sibling": "response_10_1591348893238"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thankyou so much"
+              },
+              {
+                "text": "thanks a lot"
+              },
+              {
+                "text": "thank you so much .."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1591348478531",
+      "conditions": "@thankyou:thankyou",
+      "dialog_node": "response_10_1591348893238"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "i am so sorry , do you want to speak with our person please contact us at our help line 100000000, thank you"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_9_1591349737432",
+      "conditions": "anything_else",
+      "dialog_node": "response_4_1591358971747",
+      "previous_sibling": "response_5_1591358968354"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_1.passages[2].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1591349737432",
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_5_1591358968354"
+    },
+    {
+      "type": "standard",
+      "title": "greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#greetings || @greetings",
+      "dialog_node": "node_8_1591329261102",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Ask about electronics",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input_text?>"
+          },
+          "result_variable": "webhook_result_2"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#electronics || #users_manual || @electronics",
+      "dialog_node": "node_8_1591527564091",
+      "previous_sibling": "node_6_1591710682987"
+    },
+    {
+      "type": "standard",
+      "title": "Store_Locations_Hours_Directions",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Store || @store",
+      "dialog_node": "node_4_1592128306426",
+      "previous_sibling": "node_8_1591329261102"
+    },
+    {
+      "type": "standard",
+      "title": "thankyou",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Thankyou || @thankyou",
+      "dialog_node": "node_1_1591348478531",
+      "previous_sibling": "node_8_1591527564091"
+    },
+    {
+      "type": "standard",
+      "title": "ask about product",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input_text?>"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#users_manual",
+      "dialog_node": "node_9_1591349737432",
+      "previous_sibling": "node_6_1592126552700"
+    },
+    {
+      "type": "frame",
+      "title": "Appointment",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "your Appointment : SLOT : $number ,  PHONE NUMBER :$number_2 ; your Appointment is fixed on Monday , 11/1/2020 , our person will call you to this $number_2 number before a day Thank you  ."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#Appointment",
+      "dialog_node": "node_6_1592126552700",
+      "previous_sibling": "node_4_1592128306426"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              },
+              {
+                "text": "i am really sorry i am not getting you , can you please contact our help line number 10000000"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_1_1591348478531",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "ask about wireless router setup ",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input_text?>"
+          },
+          "result_variable": "webhook_result_3"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#users_manual || #wireless_router || @wifi_router",
+      "dialog_node": "node_6_1591710682987",
+      "previous_sibling": "node_9_1591349737432"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Intelligent Bot",
+  "language": "en",
+  "description": ""
+}
